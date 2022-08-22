@@ -139,8 +139,14 @@ body .main-container .cards-container .card .loading-wrapper .loading {
   border-right-color: #8614f8;
   border-radius: 22px;
   -webkit-animation: rotate 1s infinite linear;
+          animation: rotate 1s infinite linear;
 }
 @-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
   }

@@ -50,7 +50,6 @@ function createCard(title, content) {
         cardContent: content
     });
     localStorage.setItem('cards', JSON.stringify(_constants__WEBPACK_IMPORTED_MODULE_0__.createdCardsArray));
-    // hideLoaderInCard();
     hideLoader(cardIndex);
 }
 
@@ -95,21 +94,6 @@ function refreshCardIndex() {
         addContent.innerHTML = cardPopupTemplate;
     popup.style.cssText = "top: 0; visibility: visible; opacity: 1;";
   }
-
-//   function hideLoaderInCard() {
-//     const cards = document.querySelectorAll('.card');
-//     for(let i = 0; i < cards.length; i++) {
-//         let interval = setInterval(function(){
-//             setTimeout(function() {
-//                 const cardLoader = cards[i].querySelector('.loading-wrapper');
-//                 cardLoader.style.display = 'none';
-//               }, 3000); 
-//         }, 0)
-//         if(i >= cards.length) {
-//             clearInterval(interval);
-//         }
-//     }
-// } 
  
 function hideLoader(index) {
 

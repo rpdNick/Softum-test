@@ -134,10 +134,10 @@ body {
                     border: 6px solid #DFDFDF;
                     border-right-color: #8614f8;
                     border-radius: 22px;
-                    -webkit-animation: rotate 1s infinite linear;
+                    animation: rotate 1s infinite linear;
                   }
     
-                  @-webkit-keyframes rotate {
+                  @keyframes rotate {
                     100% {
                       -webkit-transform: rotate(360deg);
                     }
