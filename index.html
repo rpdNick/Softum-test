@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-navbar">
+            <div class="nav-box">
+                <button class="btn navbar-item green-btn" data-type="add-card">Добавить</button>
+                <button class="btn navbar-item red-btn" data-type="delete-card">Удалить</button>
+                <button class="btn navbar-item orange-btn" data-type="clear-cards">Очистить</button>
+                <div class="navbar-item switch">
+                    <input type="checkbox" id="switch" /><label for="switch"><span>Заполнить</span></label>
+                </div>
+                
+            </div>
+        </div>
+        <div class="cards-container"></div>
+    </div>
+    <div class="popup-overlay">
+        <div class="popup">
+            <a class="close-popup" href="#">×</a>
+            <div class="popup-content"></div>
+        </div>
+    </div>
+    <a id="top-btn">
+        <svg class="arrow-up" viewBox="0 0 24 24">
+            <path d="M18.71,11.71a1,1,0,0,1-1.42,0L13,7.41V19a1,1,0,0,1-2,0V7.41l-4.29,4.3a1,1,0,0,1-1.42-1.42l6-6a1,1,0,0,1,1.42,0l6,6A1,1,0,0,1,18.71,11.71Z"/>
+        </svg>
+    </a>
+</body>
+</html>
