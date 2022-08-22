@@ -270,10 +270,9 @@ body {
         .main-container {
             .cards-container {
                 padding: 0 20px 30px 20px;
-                display: flex;
-                flex-direction: row;
                 overflow-y: auto;
-                justify-content: flex-start;
+                grid-auto-flow: column;
+                justify-content: start;
                 .card {
                     min-width: 280px;
                 }

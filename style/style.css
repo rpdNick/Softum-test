@@ -252,10 +252,9 @@ body #top-btn .arrow-up {
 @media screen and (max-width: 500px) {
   body .main-container .cards-container {
     padding: 0 20px 30px 20px;
-    display: flex;
-    flex-direction: row;
     overflow-y: auto;
-    justify-content: flex-start;
+    grid-auto-flow: column;
+    justify-content: start;
   }
   body .main-container .cards-container .card {
     min-width: 280px;
